@@ -1,6 +1,6 @@
-######################################################################
-##############################  PART-A  ##############################
-######################################################################
+##########################################################################
+##############################  Question-1  ##############################
+##########################################################################
 
 #importing datetime package
 import datetime; 
@@ -20,10 +20,13 @@ finalBalance = (1.05**wholeYears)*10000;
 print("Your Final account balance on December 1, 2030 would be \t"+ str(finalBalance));
 
 
-######################################################################
-##############################  PART-B  ##############################
-######################################################################
+##########################################################################
+##############################  Question-2  ##############################
+##########################################################################
 
+#------------------------------------------------------------------------#
+#-----------------------------  PART-A  ---------------------------------# 
+#------------------------------------------------------------------------#
 
 #importing random package 
 import random;
@@ -43,13 +46,18 @@ while (balance > 0):
         
 print("Number of times coin was flipped was :\t"+str(coinFlip));
 
-y = []; #Creating an empty list so that we can save number of coinFlips per one cycle.
-for x in range(100):# creating a loop for 100 counts.
+#------------------------------------------------------------------------#
+#-----------------------------  PART-B  ---------------------------------# 
+#------------------------------------------------------------------------#
+
+y = []; 
+# creating a loop for 100 counts.
+for x in range(100):
     import random;
     balance = 3;
     coinFlip =0;
     while (balance > 0):
-        flipResult = random.randint(0, 1) # 0 for Loss & 1 for win!
+        flipResult = random.randint(0, 1) 
         if(flipResult == 0):
             balance -= 1;
             coinFlip += 1;
@@ -57,10 +65,7 @@ for x in range(100):# creating a loop for 100 counts.
                 balance += 1;
                 coinFlip += 1;
     print("Number of times coin was flipped was :\t"+str(coinFlip));
-    y.append(int(coinFlip)); 
-    #Inserting the coinFlips in a list og y[].
+    y.append(int(coinFlip)); #Inserting the coinFlips in a list og y[].
     
 print("Maximum  number of coin flips until the gambler wentbroke was :\t" + str(max(y)));
-#Printing the coutcome by a buildin function of max(y), which gives out the max from list.
 print("Minimum  number of coin flips until the gambler wentbroke was :\t" + str(min(y)));
-#Printing the coutcome by a buildin function of min(y), which gives out the min from list.

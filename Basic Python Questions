@@ -1,0 +1,41 @@
+1 Your balance will be...
+          Suppose you invest $10,000 into a bank now. For simplicity, suppose the bank
+          applies 5% interest to the account each year, compounded annually. That is,
+          from now until one year from now, your balance will be $10,000. One year from
+          now until two years from now, your balance will be $10,500 = 1.05 * $10,000.
+          After two years from now, but before three years from now, your balance will be
+          $11,025 = 1.05*1.05*$10,000. In general, if at least t years have past from, but
+          t + 1 years have not yet past, then the balance in the account is 1.05t ∗ $10, 000.
+          Write a Python file that will compute your balance on December 1, 2030 and
+          print it out to the screen. (Although you can compute in your head the number
+          of full years until December 1, 2030, compute this time difference in a programmatic fashion.)
+                Tips:
+                1. Make sure to begin by importing the datetime package.
+                2. Create some variable that stores the current time. For example, nowTime = datetime.datetime.now().
+                3. Create some variable that stores the future December 1, 2030 date. For example, futureTime = datetime.datetime(2030,12,1).
+                4. Create a variable that stores the difference between the current and future date, such as diffTime = futureTime - nowTime.
+                5. diffTime.days will tell you how many full days have past between nowTime and futureTime. Try to use this to compute how many whole years have 
+                   passed in between. Assume each year has 365 days for this question.
+                6. Once you have the number of full years, you can compute the balance of the account using the formula 1.05t ∗ $10, 000.
+
+
+2 Gambler’s Ruin
+          The Gambler’s Ruin is a statistical concept that is characterized in a variety of slightly different ways. One way of describing it is as follows. Imagine a gambler
+          begins with $X. (For a concrete example, suppose the gambler starts with $3.)
+          A fair coin is flipped. If it is heads, the gambler wins $1, and if it is tails, the gambler loses $1. The concept of Gambler’s Ruin implies that, if the gambler 2 
+          continues to play, eventually, the gambler will be reduced to $0, even though for any individual coin flip, the gambler’s average (“expected value”) result is a
+          net gain of $0 (neither winning nor losing money).
+          Part (a):
+              Suppose your gambler begins with $3. Write some code that simulates this situation and reports the number of coin flips seen by the gambler, before he/she
+              runs out of money. Some hints:
+                  • Begin by importing the random package, which helps us generate random numbers, so we can simulate a coin flip: import random
+                  • You should set up a while loop that continues whenever the gambler still has money. Perhaps use: while(balance > 0):
+                  • Using the command flipResult=random.randint(1,2) will assign a random integer, 1 or 2, to the variable titled flipResult.
+                  • Using an if statement, you can either add $1 or subtract $1 to the balance of the gambler, based on the value of flipResult.
+                  • Every time through the while loop, the count of the number of coin flips seen should increase by 1.
+                  • After exiting the while loop, your program should print out the number of coin flips seen.
+          Part (b):
+              Wrap your code from part (a) in a for loop, which will repeat the simulation 100 times. What was the maximum number of coin flips until the gambler went
+              broke in your simulation? What was the minimum?
+              Hint: your code for part (b) should have the following structure: for trialNumber in range(100): CODE FROM PART A
+              

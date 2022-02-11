@@ -1,0 +1,22 @@
+
+1.	For the cancer data set, compute the correlation coefficient between Diameter and Pigment.  Use Pandas and the .corr() method.  
+
+2.	For a column of data x and a column of data y, there is an equation that relates the slope of the line of best fit (m) with the correlation coefficient (r).  That equation is:
+    m = r * std(y)/std(x)
+          In the equation above, std(y) represents the standard deviation of the y column of data and std(x) is the standard deviation of the x column of data.
+          Use the Pandas .corr() and .std() methods to compute the slope of the line of best fit between Diameter and Pigment.
+          Next, use compute the y-intecept of the line of best fit using:
+              b = ybar – m*xbar
+	        Lastly, plot the line of best fit using matplotlib.pyplot.
+          
+3.	Again, use the cancer data set.  Use Pandas and/or NumpPy functions to help you solve.  What is the average diameter among cancerous observations?  
+    What is the average diameter among non-cancerous observations?
+
+4.	Expanding on question 2.  When we have observed data from two different groups, we may want to assess whether the two groups have a difference in means which is statistically significant.  
+    One common test to test statistical significance about any difference in means is the 2-Sample T-Test.
+
+        Then try these commands:
+            •	from scipy.stats import ttest_ind
+            •	ttest_ind(cancerousDF['Diameter'],noncancerousDF['Diameter'])
+
+5.	Find the 5 nearest neighbors for a stock that has 4.5% growth, $4 billion in market cap, and a risk factor of 0.5.  Use the stockGrowth.csv data set.  Remember to scale the data accordingly.

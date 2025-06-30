@@ -1,8 +1,8 @@
-- 👋 Hi, I’m @Prinagori
-- 👀 I’m interested in Business Analytics
-- 🌱 I’m currently learning Python programming
-- 💞️ I’m looking to collaborate on using Python libraries and generating meaningful insights from large amounts of data
-- 📫 How to reach me prinagori5@gmail.com
+- ✨ Data Science & BI professional with 4+ years of experience in analytics and machine learning
+- 🎓 MS in Business Analytics & AI – UT Dallas
+- 💼 Skilled in Python, SQL, Power BI, and predictive modeling
+- 🌱 Currently working with Looker and exploring ML deployment on Azure
+- 📫 prinagori5@gmail.com
 
 <!---
 Prinagori/Prinagori is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
